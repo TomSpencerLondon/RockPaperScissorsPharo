@@ -14,6 +14,12 @@ Stone >> play: aWeapon [
 ]
 
 { #category : 'as yet unclassified' }
+Stone >> playAgainstPaper [
+
+	^ #paper
+]
+
+{ #category : 'as yet unclassified' }
 Stone >> playAgainstScissors [
 	^#stone
 ]
