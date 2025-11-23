@@ -1,8 +1,8 @@
 Class {
 	#name : 'RockPaperScissorsTest',
 	#superclass : 'TestCase',
-	#category : 'RockPaperScissors',
-	#package : 'RockPaperScissors'
+	#category : 'RockPaperScissors-Tests',
+	#package : 'RockPaperScissors-Tests'
 }
 
 { #category : 'tests' }
