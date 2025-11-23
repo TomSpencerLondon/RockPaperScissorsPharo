@@ -6,51 +6,80 @@ Class {
 }
 
 { #category : 'tests' }
-RockPaperScissorsTest >> testPaperAgainstPaperIsDraw [
+RockPaperScissorsTest >> testLizardEatsPaper [
+	self assert: (Lizard new play: Paper new) equals: #lizard.
+	self assert: (Paper new play: Lizard new) equals: #lizard
+]
+
+{ #category : 'tests' }
+RockPaperScissorsTest >> testLizardPoisonsSpock [
+	self assert: (Lizard new play: Spock new) equals: #lizard.
+	self assert: (Spock new play: Lizard new) equals: #lizard
+]
+
+{ #category : 'tests' }
+RockPaperScissorsTest >> testPaperCoversRock [
+
+	self assert: (Paper new play: Stone new) equals: #paper.
+	self assert: (Stone new play: Paper new) equals: #paper
+]
+
+{ #category : 'tests' }
+RockPaperScissorsTest >> testPaperDisprovesSpock [
+	self assert: (Paper new play: Spock new) equals: #paper.
+	self assert: (Spock new play: Paper new) equals: #paper
+]
+
+{ #category : 'tests' }
+RockPaperScissorsTest >> testPaperDrawsPaper [
 
 	self assert: (Paper new play: Paper new) equals: #draw
 ]
 
 { #category : 'tests' }
-RockPaperScissorsTest >> testPaperAgainstScissorsIsLosing [
-
+RockPaperScissorsTest >> testScissorsCutsPaper [
+	self assert: (Scissors new play: Paper new) equals: #scissors.
 	self assert: (Paper new play: Scissors new) equals: #scissors
 ]
 
 { #category : 'tests' }
-RockPaperScissorsTest >> testPaperAgainstStoneIsWinning [
-
-	self assert: (Paper new play: Stone new) equals: #paper
+RockPaperScissorsTest >> testScissorsDecapitatesLizard [
+	self assert: (Scissors new play: Lizard new) equals: #scissors.
+	self assert: (Lizard new play: Scissors new) equals: #scissors
 ]
 
 { #category : 'tests' }
-RockPaperScissorsTest >> testScissorsAgainstPaperIsWinning [
-	self assert: (Scissors new play: Paper new) equals: #scissors
-]
-
-{ #category : 'tests' }
-RockPaperScissorsTest >> testScissorsAgainstScissorsIsDraw [
+RockPaperScissorsTest >> testScissorsDrawsScissors [
 
 	self assert: (Scissors new play: Scissors new) equals: #draw
 ]
 
 { #category : 'tests' }
-RockPaperScissorsTest >> testScissorsAgainstStoneIsLosing [
-	self assert: (Scissors new play: Stone new) equals: #stone
+RockPaperScissorsTest >> testSpockSmashesScissors [
+	self assert: (Spock new play: Scissors new) equals: #spock.
+	self assert: (Scissors new play: Spock new) equals: #spock
 ]
 
 { #category : 'tests' }
-RockPaperScissorsTest >> testStoneAgainstPaperIsLosing [
-	self assert: (Stone new play: Paper new) equals: #paper
+RockPaperScissorsTest >> testSpockVaporizesStone [
+	self assert: (Paper new play: Spock new) equals: #paper.
+	self assert: (Spock new play: Paper new) equals: #paper
 ]
 
 { #category : 'tests' }
-RockPaperScissorsTest >> testStoneAgainstScissorsIsWinning [
+RockPaperScissorsTest >> testStoneCrushesLizard [
 
+	self assert: (Rock new play: Lizard new) equals: #rock.
+	self assert: (Lizard new play: Rock new) equals: #rock
+]
+
+{ #category : 'tests' }
+RockPaperScissorsTest >> testStoneCrushesScissors [
+	self assert: (Scissors new play: Stone new) equals: #stone.
 	self assert: (Stone new play: Scissors new) equals: #stone
 ]
 
 { #category : 'tests' }
-RockPaperScissorsTest >> testStoneAgainstStoneIsDraw [
+RockPaperScissorsTest >> testStoneDrawsStone [
 	self assert: (Stone new play: Stone new) equals: #draw
 ]

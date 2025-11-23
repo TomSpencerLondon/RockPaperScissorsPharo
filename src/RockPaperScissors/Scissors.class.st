@@ -14,6 +14,11 @@ Scissors >> play: aWeapon [
 ]
 
 { #category : 'as yet unclassified' }
+Scissors >> playAgainstLizard [
+	^ #scissors
+]
+
+{ #category : 'as yet unclassified' }
 Scissors >> playAgainstPaper [
 
 	^ #scissors
@@ -23,6 +28,11 @@ Scissors >> playAgainstPaper [
 Scissors >> playAgainstScissors [
 
 	^ #draw
+]
+
+{ #category : 'as yet unclassified' }
+Scissors >> playAgainstSpock [
+	^ #spock
 ]
 
 { #category : 'as yet unclassified' }

@@ -2,42 +2,33 @@
 I am a weapon in RockPaperScissors
 "
 Class {
-	#name : 'Paper',
+	#name : 'Spock',
 	#superclass : 'Object',
 	#category : 'RockPaperScissors',
 	#package : 'RockPaperScissors'
 }
 
 { #category : 'as yet unclassified' }
-Paper >> play: aWeapon [
-
-	^ aWeapon playAgainstPaper
+Spock >> play: aWeapon [ 
+	^ aWeapon playAgainstSpock
 ]
 
 { #category : 'as yet unclassified' }
-Paper >> playAgainstLizard [
+Spock >> playAgainstLizard [
 	^ #lizard
 ]
 
 { #category : 'as yet unclassified' }
-Paper >> playAgainstPaper [
-
-	^ #draw
-]
-
-{ #category : 'as yet unclassified' }
-Paper >> playAgainstScissors [
-
-	^ #scissors
-]
-
-{ #category : 'as yet unclassified' }
-Paper >> playAgainstSpock [
+Spock >> playAgainstPaper [
 	^ #paper
 ]
 
 { #category : 'as yet unclassified' }
-Paper >> playAgainstStone [
+Spock >> playAgainstScissors [
+	^ #spock
+]
 
-	^ #paper
+{ #category : 'as yet unclassified' }
+Spock >> playAgainstStone [
+	^ #stone
 ]
