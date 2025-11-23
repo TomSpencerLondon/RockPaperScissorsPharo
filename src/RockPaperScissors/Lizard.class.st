@@ -27,3 +27,8 @@ Lizard >> playAgainstScissors [
 Lizard >> playAgainstSpock [
 	^ #lizard
 ]
+
+{ #category : 'as yet unclassified' }
+Lizard >> playAgainstStone [
+	^ #stone
+]

@@ -30,5 +30,5 @@ Spock >> playAgainstScissors [
 
 { #category : 'as yet unclassified' }
 Spock >> playAgainstStone [
-	^ #stone
+	^ #spock
 ]

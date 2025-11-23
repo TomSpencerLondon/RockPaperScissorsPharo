@@ -62,15 +62,15 @@ RockPaperScissorsTest >> testSpockSmashesScissors [
 
 { #category : 'tests' }
 RockPaperScissorsTest >> testSpockVaporizesStone [
-	self assert: (Paper new play: Spock new) equals: #paper.
-	self assert: (Spock new play: Paper new) equals: #paper
+	self assert: (Spock new play: Stone new) equals: #spock.
+	self assert: (Stone new play: Spock new) equals: #spock
 ]
 
 { #category : 'tests' }
 RockPaperScissorsTest >> testStoneCrushesLizard [
 
-	self assert: (Rock new play: Lizard new) equals: #rock.
-	self assert: (Lizard new play: Rock new) equals: #rock
+	self assert: (Stone new play: Lizard new) equals: #stone.
+	self assert: (Lizard new play: Stone new) equals: #stone
 ]
 
 { #category : 'tests' }
