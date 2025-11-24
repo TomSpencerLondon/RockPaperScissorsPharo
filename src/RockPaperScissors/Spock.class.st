@@ -3,7 +3,7 @@ I am a weapon in RockPaperScissors
 "
 Class {
 	#name : 'Spock',
-	#superclass : 'Object',
+	#superclass : 'Weapon',
 	#category : 'RockPaperScissors',
 	#package : 'RockPaperScissors'
 }
@@ -26,6 +26,11 @@ Spock >> playAgainstPaper [
 { #category : 'as yet unclassified' }
 Spock >> playAgainstScissors [
 	^ #spock
+]
+
+{ #category : 'as yet unclassified' }
+Spock >> playAgainstSpock [
+	^ #draw
 ]
 
 { #category : 'as yet unclassified' }

@@ -3,7 +3,7 @@ I am a weapon in RockPaperScissors
 "
 Class {
 	#name : 'Lizard',
-	#superclass : 'Object',
+	#superclass : 'Weapon',
 	#category : 'RockPaperScissors',
 	#package : 'RockPaperScissors'
 }
@@ -11,6 +11,11 @@ Class {
 { #category : 'as yet unclassified' }
 Lizard >> play: aWeapon [ 
 	^ aWeapon playAgainstLizard
+]
+
+{ #category : 'as yet unclassified' }
+Lizard >> playAgainstLizard [
+	^ #draw
 ]
 
 { #category : 'as yet unclassified' }

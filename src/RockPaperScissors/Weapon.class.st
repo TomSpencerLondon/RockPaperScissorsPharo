@@ -1,0 +1,21 @@
+"
+Weapon class comment: 'I am the abstract superclass for all weapons in Rock-Paper-Scissors-Lizard-Spock. My subclasses implement the game rules using double dispatch.
+
+My subclasses must implement:
+- playAgainstStone:withResultHandler:
+- playAgainstPaper:withResultHandler:
+- playAgainstScissors:withResultHandler:
+- playAgainstLizard:withResultHandler:
+- playAgainstSpock:withResultHandler:'
+"
+Class {
+	#name : 'Weapon',
+	#superclass : 'Object',
+	#category : 'RockPaperScissors',
+	#package : 'RockPaperScissors'
+}
+
+{ #category : 'as yet unclassified' }
+Weapon >> vs: aWeapon withResultHandler: aResultHandler [
+	^ aWeapon playAgainst: self withResultHandler: aResultHandler
+]

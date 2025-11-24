@@ -3,7 +3,7 @@ I am a weapon in RockPaperScissors
 "
 Class {
 	#name : 'Scissors',
-	#superclass : 'Object',
+	#superclass : 'Weapon',
 	#category : 'RockPaperScissors',
 	#package : 'RockPaperScissors'
 }
@@ -11,6 +11,11 @@ Class {
 { #category : 'as yet unclassified' }
 Scissors >> play: aWeapon [ 
 	^aWeapon playAgainstScissors
+]
+
+{ #category : 'as yet unclassified' }
+Scissors >> playAgainst: aWeapon withResultHandler: aResultHandler [ 
+	^ aWeapon playAgainstScissors self withResultHandler: aResultHandler
 ]
 
 { #category : 'as yet unclassified' }

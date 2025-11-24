@@ -6,6 +6,11 @@ Class {
 }
 
 { #category : 'tests' }
+RockPaperScissorsTest >> testLizardDrawsLizard [
+	self assert: (Lizard new play: Lizard new) equals: #draw
+]
+
+{ #category : 'tests' }
 RockPaperScissorsTest >> testLizardEatsPaper [
 	self assert: (Lizard new play: Paper new) equals: #lizard.
 	self assert: (Paper new play: Lizard new) equals: #lizard
@@ -52,6 +57,11 @@ RockPaperScissorsTest >> testScissorsDecapitatesLizard [
 RockPaperScissorsTest >> testScissorsDrawsScissors [
 
 	self assert: (Scissors new play: Scissors new) equals: #draw
+]
+
+{ #category : 'tests' }
+RockPaperScissorsTest >> testSpockDrawsSpock [
+	self assert: (Spock new play: Spock new) equals: #draw
 ]
 
 { #category : 'tests' }
