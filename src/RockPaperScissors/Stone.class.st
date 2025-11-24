@@ -15,7 +15,7 @@ Stone >> play: aWeapon [
 
 { #category : 'as yet unclassified' }
 Stone >> playAgainst: aWeapon withResultHandler: aResultHandler [ 
-	^ aResultHandler playAgainstStone
+	^ aWeapon playAgainstScissors: self withResultHandler: aResultHandler
 ]
 
 { #category : 'as yet unclassified' }
