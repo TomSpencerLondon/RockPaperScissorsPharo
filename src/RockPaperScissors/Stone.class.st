@@ -35,6 +35,11 @@ Stone >> playAgainstScissors [
 ]
 
 { #category : 'as yet unclassified' }
+Stone >> playAgainstScissors: aScissors withResultHandler: aResultHandler [ 
+	^ aResultHandler stoneWon
+]
+
+{ #category : 'as yet unclassified' }
 Stone >> playAgainstSpock [
 	^ #spock
 ]

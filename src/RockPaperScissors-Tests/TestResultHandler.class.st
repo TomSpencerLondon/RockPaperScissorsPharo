@@ -45,6 +45,12 @@ TestResultHandler >> lastWinner [
 ]
 
 { #category : 'drawing' }
+TestResultHandler >> scissorsWon [
+	wasDraw := false.
+	lastWinner := #scissors
+]
+
+{ #category : 'drawing' }
 TestResultHandler >> stoneWon [
 	wasDraw := false.
 	lastWinner := #stone

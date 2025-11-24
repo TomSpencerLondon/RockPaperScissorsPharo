@@ -16,6 +16,26 @@ Class {
 }
 
 { #category : 'as yet unclassified' }
+Weapon >> play: aWeapon [ 
+	^ self subclassResponsibility
+]
+
+{ #category : 'as yet unclassified' }
+Weapon >> playAgainstLizard [
+	^ self subclassResponsibility
+]
+
+{ #category : 'as yet unclassified' }
+Weapon >> playAgainstSpock [
+	^ self subclassResponsibility
+]
+
+{ #category : 'as yet unclassified' }
+Weapon >> playAgainstStone [
+	^ self subclassResponsibility
+]
+
+{ #category : 'as yet unclassified' }
 Weapon >> vs: aWeapon withResultHandler: aResultHandler [
 	^ aWeapon playAgainst: self withResultHandler: aResultHandler
 ]

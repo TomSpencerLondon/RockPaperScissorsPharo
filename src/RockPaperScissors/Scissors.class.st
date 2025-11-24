@@ -15,7 +15,7 @@ Scissors >> play: aWeapon [
 
 { #category : 'as yet unclassified' }
 Scissors >> playAgainst: aWeapon withResultHandler: aResultHandler [ 
-	^ aWeapon playAgainstScissors self withResultHandler: aResultHandler
+	^ aWeapon playAgainstScissors: self withResultHandler: aResultHandler
 ]
 
 { #category : 'as yet unclassified' }
