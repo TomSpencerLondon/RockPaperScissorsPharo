@@ -15,8 +15,18 @@ Paper >> play: aWeapon [
 ]
 
 { #category : 'as yet unclassified' }
+Paper >> playAgainst: aWeapon withResultHandler: aResultHandler [ 
+	^ aWeapon playAgainstPaper: self withResultHandler: aResultHandler
+]
+
+{ #category : 'as yet unclassified' }
 Paper >> playAgainstLizard [
 	^ #lizard
+]
+
+{ #category : 'as yet unclassified' }
+Paper >> playAgainstLizard: aLizard withResultHandler: aResultHandler [ 
+	aResultHandler lizardWon
 ]
 
 { #category : 'as yet unclassified' }

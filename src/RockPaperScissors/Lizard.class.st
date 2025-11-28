@@ -24,6 +24,11 @@ Lizard >> playAgainstPaper [
 ]
 
 { #category : 'as yet unclassified' }
+Lizard >> playAgainstPaper: aWeapon withResultHandler: aResultHandler [ 
+	^ aWeapon playAgainstLizard: self withResultHandler: aResultHandler
+]
+
+{ #category : 'as yet unclassified' }
 Lizard >> playAgainstScissors [
 	^ #scissors
 ]

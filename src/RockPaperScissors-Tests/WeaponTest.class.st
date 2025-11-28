@@ -9,6 +9,33 @@ Class {
 }
 
 { #category : 'tests' }
+WeaponTest >> testLizardEatsPaperWithHandler [
+	| lizard paper handler |
+	lizard := Lizard new.
+	paper := Paper new.
+	handler := TestResultHandler new.
+	
+	lizard vs: paper withResultHandler: handler.
+	
+	self assert: handler lastWinner equals: #lizard
+	
+]
+
+{ #category : 'tests' }
+WeaponTest >> testPaperBeatsSpock [
+	| paper spock handler |
+	paper := Paper new.
+	spock := Spock new.
+	handler := TestResultHandler new.
+	
+	paper vs: spock withResultHandler: handler.
+	
+	self assert: handler lastWinner equals: #paper
+	
+	
+]
+
+{ #category : 'tests' }
 WeaponTest >> testPaperBeatsStone [
 	| paper stone handler |
 	paper := Paper new.

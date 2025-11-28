@@ -14,6 +14,11 @@ Spock >> play: aWeapon [
 ]
 
 { #category : 'as yet unclassified' }
+Spock >> playAgainst: aPaper withResultHandler: aResultHandler [ 
+	^ aResultHandler paperWon 
+]
+
+{ #category : 'as yet unclassified' }
 Spock >> playAgainstLizard [
 	^ #lizard
 ]
