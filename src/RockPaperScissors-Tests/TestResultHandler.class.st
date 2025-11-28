@@ -57,19 +57,15 @@ TestResultHandler >> paperWon [
 ]
 
 { #category : 'drawing' }
-TestResultHandler >> playAgainstScissors: aStone withResultHandler: aResultHandler [ 
-	^ aResultHandler stoneWon
-]
-
-{ #category : 'drawing' }
-TestResultHandler >> playAgainstStone [
-	self shouldBeImplemented.
-]
-
-{ #category : 'drawing' }
 TestResultHandler >> scissorsWon [
 	wasDraw := false.
 	lastWinner := #scissors
+]
+
+{ #category : 'drawing' }
+TestResultHandler >> spockWon [
+	wasDraw := false.
+	lastWinner := #spock
 ]
 
 { #category : 'drawing' }

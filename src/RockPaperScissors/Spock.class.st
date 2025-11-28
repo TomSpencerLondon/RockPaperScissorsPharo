@@ -34,6 +34,11 @@ Spock >> playAgainstScissors [
 ]
 
 { #category : 'as yet unclassified' }
+Spock >> playAgainstScissors: aWeapon withResultHandler: aResultHandler [ 
+	^ aResultHandler spockWon
+]
+
+{ #category : 'as yet unclassified' }
 Spock >> playAgainstSpock [
 	^ #draw
 ]

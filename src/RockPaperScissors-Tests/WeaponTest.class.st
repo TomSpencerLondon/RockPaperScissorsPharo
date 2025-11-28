@@ -51,6 +51,20 @@ WeaponTest >> testPaperBeatsStone [
 ]
 
 { #category : 'tests' }
+WeaponTest >> testSpockSmashesScissorsWithHandler [
+	| spock scissors handler |
+	spock := Spock new.
+	scissors := Scissors new.
+	handler := TestResultHandler new.
+	
+	spock vs: scissors withResultHandler: handler.
+	
+	self assert: handler lastWinner equals: #spock
+	
+	
+]
+
+{ #category : 'tests' }
 WeaponTest >> testStoneVsScissors [
 	| stone scissors handler |
 	stone := Stone new.
